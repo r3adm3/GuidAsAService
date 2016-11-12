@@ -5,11 +5,11 @@ using System.Web;
 
 namespace GuidAsAService.Models
 {
-    public class newGuid
+    public class GuidService
     {
-       public Guid createGuid()
+       public string createGuid()
         {
-            Guid result = Guid.NewGuid();
+            string result = Guid.NewGuid().ToString();
             
             return result;
         }
