@@ -7,9 +7,9 @@ namespace GuidAsAService.Models
 {
     public class GuidService
     {
-       public string createGuid()
+       public Guid createGuid()
         {
-            string result = Guid.NewGuid().ToString();
+            Guid result = Guid.NewGuid();
             
             return result;
         }

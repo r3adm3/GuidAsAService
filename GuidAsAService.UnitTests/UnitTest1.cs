@@ -32,7 +32,7 @@ namespace GuidAsAService.UnitTests
 
 
             //act 
-            var result = myObj.createGuid();
+            var result = myObj.createGuid().ToString();
 
             //assert
             Assert.AreEqual(result.Length, 36);
@@ -45,7 +45,7 @@ namespace GuidAsAService.UnitTests
 
             //act
             string pattern = @"[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}";
-            string input = myObj.createGuid();
+            string input = myObj.createGuid().ToString();
 
             bool result;
             if (Regex.IsMatch(input, pattern))

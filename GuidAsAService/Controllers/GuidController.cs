@@ -11,11 +11,11 @@ namespace GuidAsAService.Controllers
 {
     public class GuidController : ApiController
     {
-        public string Create()
+        public Guid Create()
         {
             GuidService myObj = new GuidService();
 
-            string result = myObj.createGuid();
+            Guid result = myObj.createGuid();
 
             return result;
         }
